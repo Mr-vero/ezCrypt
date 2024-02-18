@@ -1,0 +1,29 @@
+{
+  "name": "LazyCrypt",
+  "version": "1.0.0",
+  "description": "A Node.js module for secure key generation, hash creation, and authenticated encryption using AES-256-CBC.",
+  "main": "LazyCrypt.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Node.js",
+    "Cryptography"
+  ],
+  "author": "Irvan Smith",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr-vero/LazyCrypt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mr-vero/LazyCrypt/issues"
+  },
+  "homepage": "https://github.com/Mr-vero/LazyCrypt#readme",
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
