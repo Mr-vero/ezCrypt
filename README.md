@@ -1,4 +1,4 @@
-# lazyCrypt
+# LazyCrypt
 
 LazyCrypt is designed for secure key generation, hash creation, and authenticated encryption using the AES-256-CBC algorithm. This module provides a simple and convenient way to handle cryptographic operations in your Node.js/Javascript applications.
 
@@ -17,32 +17,32 @@ LazyCrypt is designed for secure key generation, hash creation, and authenticate
 
 ## Installation
 
-To use `lazyCrypt.js` in your Node.js project, install it via npm:
+To use `LazyCrypt.js` in your Node.js project, install it via npm:
 
 ```bash
-npm install lazy-crypt
+npm install Lazy-crypt
 ```
 
 ## Usage
 
 ```javascript
-const lazyCrypt = require('lazy-crypt');
+const LazyCrypt = require('Lazy-crypt');
 
 // Generate new keys (if not already present) and initialize the module
-lazyCrypt.init();
+LazyCrypt.init();
 
 // Get public and secret keys
-const keys = lazyCrypt.generateKeys();
+const keys = LazyCrypt.generateKeys();
 const publicKey = keys.publicKey;
 const secretKey = keys.secretKey;
 
 // Generate a secure hash for a text
-const text = 'Hello, lazyCrypt!';
-const hash = lazyCrypt.generateHash(text);
+const text = 'Hello, LazyCrypt!';
+const hash = LazyCrypt.generateHash(text);
 
 // Read and verify the hash to retrieve the original text
 try {
-  const decryptedText = lazyCrypt.readHash(hash);
+  const decryptedText = LazyCrypt.readHash(hash);
   console.log('Decrypted Text:', decryptedText);
 } catch (error) {
   console.error('Error:', error.message);
@@ -51,35 +51,35 @@ try {
 
 ## API Reference
 
-### `lazyCrypt.init()`
+### `LazyCrypt.init()`
 
 Initialize the cryptography module. If the key file exists, read keys; otherwise, generate new keys and save them to the file.
 
-### `lazyCrypt.generateKeys()`
+### `LazyCrypt.generateKeys()`
 
 Generate and return an object containing public and secret keys.
 
-### `lazyCrypt.generateRandomKey(length)`
+### `LazyCrypt.generateRandomKey(length)`
 
 Generate a random key of the specified length using `crypto.randomBytes`.
 
-### `lazyCrypt.saveKeysToFile()`
+### `LazyCrypt.saveKeysToFile()`
 
 Save public and secret keys to a file with restricted permissions.
 
-### `lazyCrypt.readKeysFromFile()`
+### `LazyCrypt.readKeysFromFile()`
 
 Read public and secret keys from the file. If reading fails, generate new keys and save them to the file.
 
-### `lazyCrypt.generateHash(text)`
+### `LazyCrypt.generateHash(text)`
 
 Generate a secure hash for the given text using AES-256-CBC encryption.
 
-### `lazyCrypt.readHash(hash)`
+### `LazyCrypt.readHash(hash)`
 
 Read and verify the hash to retrieve the original text.
 
-### `lazyCrypt.calculateHmac(key, data)`
+### `LazyCrypt.calculateHmac(key, data)`
 
 Calculate HMAC for the given data using the provided key.
 
@@ -87,15 +87,15 @@ Calculate HMAC for the given data using the provided key.
 
 ```javascript
 // Example: Generate and print new keys
-lazyCrypt.generateNewKeys();
-console.log('Public Key:', lazyCrypt.publicKey);
-console.log('Secret Key:', lazyCrypt.secretKey);
+LazyCrypt.generateNewKeys();
+console.log('Public Key:', LazyCrypt.publicKey);
+console.log('Secret Key:', LazyCrypt.secretKey);
 ```
 
 ```javascript
 // Example: Generate hash for a text and print
 const textToHash = 'Secure Data';
-const hashResult = lazyCrypt.generateHash(textToHash);
+const hashResult = LazyCrypt.generateHash(textToHash);
 console.log('Generated Hash:', hashResult);
 ```
 
