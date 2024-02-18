@@ -23,13 +23,13 @@ LazyCrypt is meticulously crafted for robust key generation, hash creation, and 
 To use `LazyCrypt.js` in your Node.js project, install it via npm:
 
 ```bash
-npm install Lazy-crypt
+npm install lazycrypt
 ```
 
 ## Usage
 
 ```javascript
-const LazyCrypt = require('Lazy-crypt');
+const LazyCrypt = require('lazycrypt');
 
 // Generate new keys (if not already present) and initialize the module
 LazyCrypt.init();
