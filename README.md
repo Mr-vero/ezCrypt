@@ -13,6 +13,9 @@ LazyCrypt is designed for secure key generation, hash creation, and authenticate
 - [Usage](#usage)
 - [API Reference](#api-reference)
 - [Examples](#examples)
+- [Running the Server](#running-the-server)
+- [Usage with Server](#usage-with-server)
+- [Integration as Encryption Engine](#integration-as-encryption-engine)
 - [License](#license)
 
 ## Installation
@@ -98,6 +101,44 @@ const textToHash = 'Secure Data';
 const hashResult = LazyCrypt.generateHash(textToHash);
 console.log('Generated Hash:', hashResult);
 ```
+
+## Running the Server
+
+To initiate the server and use LazyCrypt on the client, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/LazyCrypt.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd LazyCrypt
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the server:
+
+```bash
+npm start
+```
+
+Now, you can begin generating and reading hashes using the examples provided in the `playground` folder.
+
+## Usage with Server
+
+LazyCrypt can be used both standalone and with a server. When integrated with a server, it serves as an encryption engine, allowing you to encrypt and decrypt every data transfer between the client and server.
+
+## Integration as Encryption Engine
+
+By leveraging LazyCrypt as an encryption engine, you enhance the security of your client-server communication by encrypting sensitive data before transmission and decrypting it upon reception.
 
 ## License
 
