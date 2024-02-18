@@ -1,6 +1,6 @@
 # lazyCrypt
 
-`lazyCrypt.js` designed for secure key generation, hash creation, and authenticated encryption using the AES-256-CBC algorithm. This module provides a simple and convenient way to handle cryptographic operations in your Node.js/Javascript applications.
+LazyCrypt is designed for secure key generation, hash creation, and authenticated encryption using the AES-256-CBC algorithm. This module provides a simple and convenient way to handle cryptographic operations in your Node.js/Javascript applications.
 
 ## Author
 
