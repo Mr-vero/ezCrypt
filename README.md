@@ -5,7 +5,6 @@ LazyCrypt is meticulously crafted for robust key generation, hash creation, and 
 ## Author
 
 - **Irvan Smith**
-- **Date:** Feb 17, 24
 
 ## Table of Contents
 
